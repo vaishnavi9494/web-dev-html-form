@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>
+    Customer Service Form
+    </title>
+    <script>
+        function validateForm() 
+        {
+          var x = document.forms["myForm"]["firstname"].value;
+          if (x == "") {
+            alert("Name must be filled out");
+            return false;
+          }
+          else
+          {
+              document.getElementById("zero").innerHTML="HELLO "+x+"! "+"We hope that you had great experience with us. Help us improve further by filling out the form.";
+          }
+        }
+        function myFirst()
+        {
+            document.getElementById("first").innerHTML="We constantly try to provide comfortable rooms to all our customers to enhance their experience";  
+        }
+        function mySecond()
+        {
+            document.getElementById("second").innerHTML="We hope you enjoyed dining with us";
+        }
+        function myThird()
+        {
+            document.getElementById("third").innerHTML="Thank you for your review we put in constant efforts to maintain cleanliness.";
+        }
+        function final()
+        {
+            document.getElementById("final").innerHTML="Thank you for you review!!. Your views help us perform better"
+        }
+        </script>
+</head>
+<body>
+    <div>
+        <h1>HAPPY PLACE</h1>
+        <h2>Customer Service Form</h2>
+        <p id="zero"></p>
+    </div>
+    <div>
+        <img style="margin-left: 150px;" src="https://r-cf.bstatic.com/images/hotel/max1024x768/221/221275083.jpg">
+    </div>
+    <div>
+        <p id="fourth">
+        Please enter your name below.
+        </p>
+    </div>
+    <div>
+        <form name="myForm">
+            <label for="firstname">First name:</label><br>
+            <input type="text" id="fname" name="firstname" required><br>
+            <label for="lastname">Last name:</label><br>
+            <input type="text" id="lname" name="lastname" required ><br><br>
+            <input type="button" class="button" value="Done" onclick="return validateForm()" ><br><br>
+        </form>
+        <form>
+            <label for="email">Enter your email:</label><br>
+            <input type="email" id="email" name="email"><br><br>
+            <label for="Checkout">Checkout Date:</label><br>
+            <input type="date" id="Checkout" name="Checkout Date"><br><br>
+            <label for="Condition of Rooms">Condition of Rooms:</label><br>
+            <input type="radio" name="Condition of Rooms">
+            <label for="Condition of Rooms">Excellant</label><br>
+            <input type="radio" name="Condition of Rooms">
+            <label for="Condition of Rooms">Good</label><br>
+            <input type="radio" name="Condition of Rooms">
+            <label for="Condition of Rooms">Average</label><br>
+            <input type="radio" name="Condition of Rooms">
+            <label for="Condition of Rooms">Dissatisfied</label><br><br>
+            <input type="button" class="button" value="Done" onclick="return myFirst()" ><br><br>
+            <p id="first"></p>
+            <label for="Food Quality">Food Quality:</label><br>
+            <input type="radio" name="Food Quality">
+            <label for="Food Quality">Excellant</label><br>
+            <input type="radio" name="Food Quality">
+            <label for="Food Quality">Good</label><br>
+            <input type="radio" name="Food Quality">
+            <label for="Food Quality">Average</label><br>
+            <input type="radio" name="Food Quality">
+            <label for="Food Quality">Dissatisfied</label><br><br>
+            <input type="button" class="button" value="Done" onclick="return mySecond()" ><br><br>
+            <p id="second"></p>
+            <label for="Cleanliness">Cleanliness:</label><br>
+            <input type="checkbox"  name="Clean" value="Excellant">
+            <label for="Clean">Excellant</label><br>
+            <input type="checkbox"  name="Clean" value="Good">
+            <label for="Clean">Good</label><br>
+            <input type="checkbox"  name="Clean" value="Dissatisfied">
+            <label for="Clean">Dissatisfied</label><br><br>
+            <input type="button" class="button" value="Done" onclick="return myThird()" ><br><br>
+            <P id="third"></P>
+            <label for="Time">Time taken:</label><br>
+            <select id="Time" name="Time">
+            <option value="5-10 minutes">5-10 minutes</option>
+            <option value="10-15 minutes">10-15 minutes</option>
+            <option value="15-20 minutes">15-20 minutes</option>
+            <option value="more">more</option>
+            </select><br><br>
+            <label for="overall">Overall Satisfaction (between 0 and 10):</label><br>
+            <input type="range" name="overall" min="0" max="10"><br><br>
+            <input type="button" class="button" value="Done" onclick="return final()" ><br><br> 
+            </form>
+    </div>
+    <div>
+        <p id="final"></p>
+    </div>
+        
+</body>
+</html>

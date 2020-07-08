@@ -1,0 +1,51 @@
+.button
+{
+    background-color: darkblue;
+    border: none;
+    padding: 8px 8px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+*
+{
+    background-color: pink;
+}
+#first
+{
+    color: darkblue;
+    font-size: 25px;
+}
+#second
+{
+    color: darkblue;
+    font-size: 25px;
+}
+#third
+{
+    color: darkblue;
+    font-size: 25px;
+}
+#zero
+{
+    color: darkblue;
+    font-size: 30px;
+}
+#final
+{
+    color: darkblue;
+    font-size: 25px;
+}
+h1{
+    text-align: center;
+}
+form
+{
+    font-size: 20px;
+}
+#fourth
+{
+    font-size: 20px;
+}
